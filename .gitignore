@@ -1,34 +1,32 @@
-# Wordpress - ignore core, configuration, examples, uploads and logs.
+# WordPress - Ignore core, configuration, examples, uploads, and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
 # Core
 #
 # Note: if you want to stage/commit WP core files
 # you can delete this whole section/until Configuration.
-/wp-admin/
-/wp-content/index.php
-/wp-content/languages
-/wp-content/plugins/*
-!/wp-content/plugins/wp-figma-colour-importer/
-/wp-content/themes/index.php
-/wp-includes/
-/index.php
-/license.txt
-/readme.html
-/wp-*.php
-/xmlrpc.php
+wp-admin/
+wp-content/index.php
+wp-content/languages/
+wp-content/themes/index.php
+wp-includes/
+index.php
+license.txt
+readme.html
+wp-*.php
+xmlrpc.php
 
 # Configuration
 wp-config.php
 
 # Example themes
-/wp-content/themes/twenty*/
+wp-content/themes/twenty*/
 
 # Example plugin
-/wp-content/plugins/hello.php
+wp-content/plugins/hello.php
 
 # Uploads
-/wp-content/uploads/
+wp-content/uploads/
 
 # Log files
 *.log
@@ -36,14 +34,9 @@ wp-config.php
 # htaccess
 /.htaccess
 
-# All plugins
-#
-# Note: If you wish to whitelist plugins,
-# uncomment the next line
-#/wp-content/plugins
+# 🚀 Allow tracking only the `wp-figma-colour-importer` plugin
+wp-content/plugins/*
+!wp-content/plugins/wp-figma-colour-importer/
 
-# All themes
-#
-# Note: If you wish to whitelist themes,
-# uncomment the next line
-#/wp-content/themes
+# 🚀 If you want to allow specific themes, uncomment the next line:
+# wp-content/themes/my-custom-theme/
