@@ -33,9 +33,5 @@ wp-content/uploads/
 # htaccess
 /.htaccess
 
-# 🚀 Allow tracking only the `wp-figma-colour-importer` plugin
-wp-content/plugins/*
-!wp-content/plugins/wp-figma-colour-importer/
-
 # 🚀 If you want to allow specific themes, uncomment the next line:
 # wp-content/themes/my-custom-theme/
