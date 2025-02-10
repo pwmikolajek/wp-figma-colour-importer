@@ -14,7 +14,7 @@ index.php
 license.txt
 readme.html
 wp-*.php
-!wp-content/plugins/wp-figma-colour-importer/wp-figma-colours.php
+!wp-content/plugins/wp-figma-colour-importer/wp-figma-colours.php  # ✅ Exclude this specific PHP file
 xmlrpc.php
 
 # Configuration
